@@ -1,0 +1,22 @@
+@media screen and (min-width: 1000px) {
+  header .container-menu {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  header .container-menu .header-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header .container-menu .icon-list {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .btn-signin {
+    display: none;
+  }
+}
+/*# sourceMappingURL=mediaquery.css.map */

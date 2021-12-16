@@ -1,0 +1,50 @@
+* {
+    font-family: 'Readex Pro', sans-serif;
+}
+
+header {
+    overflow: hidden;
+    padding: 20px;
+    border-bottom: 3px solid #eee;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    button {
+        font-size: 20px;
+    }
+
+    .header-logo {
+        margin-right: 10px;
+    }
+    
+    .container-menu {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+
+        .header-menu {
+            display: none;
+            button {
+                font-size: 15px;
+                padding: 0 20px;
+            }
+        }
+        .header-shortcut {
+            display: flex;
+            align-items: center;
+            .btn-demo {
+                color: white;
+                background-color: blue;
+                border-radius: 5px;
+                padding: 5px 10px;
+            }
+        }
+    }
+}
+
+
+main {
+    padding: 20px;
+}

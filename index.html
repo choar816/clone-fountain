@@ -5,24 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fountain | High-Volume Hiring</title>
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Readex+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="mediaquery.css">
 </head>
 <body>
     <header>
-        <button class="logo">fountain</button>
-        <ul>
-            <li><button>Product</button></li>
-            <li><button>Integrations</button></li>
-            <li><button>Blog</button></li>
-            <li><button>Learn</button></li>
-            <li><button>Company</button></li>
-        </ul>
-        <ul>
-            <li><button>Sign In</button></li>
-            <li><button>Request Demo</button></li>
-            <li><button>햄버거 버튼</button></li>
-        </ul>
+        <button class="header-logo">fountain</button>
+        <div class="container-menu">
+            <ul class="header-menu">
+                <li><button>Product</button></li>
+                <li><button>Integrations</button></li>
+                <li><button>Blog</button></li>
+                <li><button>Learn</button></li>
+                <li><button>Company</button></li>
+            </ul>
+            <ul class="header-shortcut">
+                <li><button class="btn-signin">Sign In</button></li>
+                <li><button class="btn-demo">Request Demo</button></li>
+                <li class="icon-list"><button><i class="bi bi-list"></i></button></li>
+            </ul>
+        </div>
     </header>
+    <ul class="hidden-menu">
+        <li><button>Product</button></li>
+        <li><button>Integrations</button></li>
+        <li><button>Blog</button></li>
+        <li><button>Learn</button></li>
+        <li><button>Company</button></li>
+    </ul>
     <main>
         <section>
             <article>

@@ -1,0 +1,23 @@
+// 화면 너비 1000 이상
+@media screen and (min-width: 1000px) {
+    header {
+        // background-color: aquamarine;
+        .container-menu {
+            justify-content: space-between;
+            
+            .header-menu {
+                display: flex;
+            }
+            .icon-list {
+                display: none;
+            }
+        }
+    }
+}
+
+// 화면 너비 500 이하
+@media screen and (max-width: 500px) {
+    .btn-signin {
+        display: none;
+    }
+}
