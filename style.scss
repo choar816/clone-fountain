@@ -3,12 +3,16 @@
 }
 
 header {
-    overflow: hidden;
-    padding: 20px;
-    border-bottom: 3px solid #eee;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    position: relative;
+    z-index: 10;
+
+    overflow: hidden;
+    padding: 20px;
+    border-bottom: 3px solid #eee;
+    background-color: #fff;
 
     button {
         font-size: 20px;
@@ -40,11 +44,30 @@ header {
                 border-radius: 5px;
                 padding: 5px 10px;
             }
+            .hidden-menu {
+                z-index: 5;
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                width: 100%;
+                background-color: pink;
+                transition: transform .5s;
+    
+                li {
+                    padding: 20px 30px;
+                }
+            }
+            .icon-list:hover {
+                & + .hidden-menu {
+                    transform: translateY(100%);
+                }
+            }
         }
     }
 }
 
 
 main {
+    z-index: 0;
     padding: 20px;
 }
